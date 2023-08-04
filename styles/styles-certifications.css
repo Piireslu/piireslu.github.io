@@ -1,0 +1,324 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700; 800 & display=swap');
+
+/* Resete de estilos para elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+ 
+/* Definindo variáveis de cores no root do documento */
+:root {
+    --color-white: #fff;
+    --color-brown: #231710;
+    --color-brown01: #966d68;
+    --color-brown02: #8f665e;
+    --color-brown03: #493736;
+    --color-gray: #ddd3ca;
+    --color-beige: #aa9280;
+    --color-black: #000000;
+    
+}
+/* Configurações gerais para o documento */  
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+/* Configuração da fonte padrão para o corpo do documento */  
+body {
+    font-family: 'poppins', sans-serif;
+}
+/* Estilização da barra de navegação */
+.navbar {
+  background-image: url(/src/image/backgound-certifications.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.logo{
+  color: #4b281f;;
+  font-size: 35px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+
+span{
+  color: #9b746a;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px  25px;
+  font-size: 20px;
+}
+
+nav ul li a{
+  color: #8f665e;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover{
+  color: #231710;
+  transform: .4s;
+}
+.contact-btn {
+  background-color: #4b281f;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
+}
+
+.contact-btn:hover {
+  transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
+}
+
+.main{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+.main span{
+  color: #9b746a;
+}
+
+
+.Card > h2 {
+  color: #000000; /* Cor preta para o texto do h2 dentro da classe .Card */
+  font-size: 20px; /* Tamanho da fonte para o h2 dentro da classe .Card */
+  margin-bottom: 10px; /* Espaçamento inferior para o h2 dentro da classe .Card */
+}
+
+.card-title {
+  font-size: 5px; /* Ajuste o valor conforme o tamanho desejado */
+  margin-bottom: 40px; /* Ajuste o espaçamento inferior conforme necessário */
+}
+
+.title h1{
+  color: #493736;
+  font-size: 30px;
+  margin-top: 50px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+
+.Container-btn form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.Container-btn form input:first-child{
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid  #231710;
+  border-radius: 30px;
+  outline: none;
+}
+
+.Container-btn form input:last-child{
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color:  #231710;
+  color: #fff;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  right: 6px;
+  top: 6px;
+  
+}
+
+.btn{
+  background-color: #231710;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}
+
+.Main{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+.Main span{
+  color: #231710;
+}
+
+
+.Container-btn form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.Container-btn form input:first-child{
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #231710;
+  border-radius: 30px;
+  outline: none;
+}
+
+.Container-btn form input:last-child{
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #231710;
+  color: #fff;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  right: 6px;
+  top: 6px;
+  
+}
+
+button{
+  background-color:#231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 20px;
+  border-radius: 30px;
+  transition: .4s;
+  
+}
+
+button:hover{
+  background-color: transparent;
+  border: 2px solid #231710;
+  cursor: pointer;
+}
+
+.Caixa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  flex-wrap: wrap;
+}
+
+.Card {
+  background: #aa9280;
+  height: 340px;
+  width: 250px;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transform: scale(1); /* Adicionando a transformação de escala */
+}
+.Card:hover {
+  transform: scale(1.1); /* Escala aumentada quando o mouse estiver sobre a imagem */
+}
+
+.Card i{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 0px 0px;
+  color: #231710;
+}
+
+.Card > h2 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px; /* Aumente esse valor para mover o h2 mais abaixo */
+}
+.show-credential-btn {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 30px;
+  transition: .4s;
+
+  position: absolute; /* Posiciona o botão de forma absoluta em relação ao card */
+  bottom: 20px; /* Ajuste o valor de "bottom" para posicionar verticalmente */
+  right: 20px; /* Ajuste o valor de "right" para posicionar horizontalmente */
+}
+
+.institution {
+  font-size: 11px; /* Ajuste o valor conforme o tamanho desejado */
+  font-weight: bold; /* Opcional: para tornar o texto em negrito */
+}
+.image-container {
+  margin-top: 10px; /* Adicione o valor desejado para ajustar a posição vertical */
+}
+
+.Paragrafo-button {
+  color: #000000;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+/* Ajuste o tamanho da fonte para o parágrafo */
+.Paragrafo-button p {
+  margin: 1rem;
+  font-size: 12px;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.end{
+  position: absolute;
+  color: #000000;
+  font-size: 14px ;
+  padding: 0;
+}

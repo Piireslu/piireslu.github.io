@@ -1,0 +1,342 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700; 800 & display=swap');
+
+/* Resete de estilos para elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+ 
+/* Definindo variáveis de cores no root do documento */
+:root {
+    --color-white: #fff;
+    --color-brown: #231710;
+    --color-brown01: #966d68;
+    --color-brown02: #8f665e;
+    --color-brown03: #493736;
+    --color-gray: #ddd3ca;
+    --color-beige: #aa9280;
+    --color-black: #000000;
+    
+}
+/* Configurações gerais para o documento */  
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+/* Configuração da fonte padrão para o corpo do documento */  
+body {
+    font-family: 'poppins', sans-serif;
+}
+/* Estilização da barra de navegação */
+.navbar {
+  background-image: url(/src/image/backgound-certifications.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.logo{
+  color: #4b281f;;
+  font-size: 35px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+
+span{
+  color: #9b746a;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px  25px;
+  font-size: 20px;
+}
+
+nav ul li a{
+  color: #8f665e;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover{
+  color: #231710;
+  transform: .4s;
+}
+.contact-btn {
+  background-color: #4b281f;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
+}
+
+.contact-btn:hover {
+  transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
+}
+
+.btn:hover{
+  transform: scale(1.2);
+}
+
+.contactForm {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 350px; /* Ajuste o valor da largura conforme necessário */
+  height: 300px; /* Ajuste o valor da altura conforme necessário */
+  background: #866259;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contactForm .inputbox {
+  margin-bottom: 10px;
+}
+
+.contactForm .inputbox input[type="text"],
+.contactForm .inputbox input[type="email"],
+.contactForm .inputbox input[type="tel"],
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-white); /* Altera o fundo para branco */
+  color: var(--color-brown);
+}
+
+.contactForm .inputbox textarea {
+  resize: vertical;
+  font-size: 14px;
+  color: var(--color-black); /* Altera a cor do texto para preto */
+  background: var(--color-white); /* Altera o fundo para branco */
+}
+
+.contactForm .inputbox input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.contactForm .inputbox input[type="submit"]:hover {
+  transform: scale(1.05);
+}
+.download-btn {
+  display: inline-block;
+  background-color: #4b281f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  right: 50%; /* Coloca o botão no meio horizontalmente */
+  z-index: 2;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px; /* Ajuste o valor conforme necessário */
+  right: 32%; /* Coloca o botão no meio horizontalmente */
+  transition: transform 0.3s ease;
+}
+
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+
+}
+ section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+ }
+
+ section .container{
+  position: relative;
+  min-width: 900px;
+  min-height: 400px;
+  display: flex;
+  z-index: 900;
+ }
+
+ section .container .contactinfo{
+  position: absolute;
+  top: 80px;
+  width: 250px;
+  height: calc(100% - 80px);
+  background: #866259;
+  left: 60px;
+  z-index: 2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2);
+ }
+
+ section .container .contactinfo h2{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+ }
+
+ section .container .contactinfo .info{
+  position: relative;
+  margin: 20px 0;
+ }
+
+ section .container .contactinfo .info li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 12px;
+  align-items: flex-start;
+ }
+
+ section .container .contactinfo .info li span:nth-child(1){
+  width: 30px;
+  min-width: 30px;
+ }
+ section .container .contactinfo .info li span:nth-child(1) img{
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+ }
+
+ section .container .contactinfo .info li span:nth-child(2){
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+
+ }
+ section .container .contactinfo .info li span:nth-child(1) img,
+ section .container .contactinfo .info li span:nth-child(2){
+  opacity: 1;
+
+ }
+
+
+ section .container .contactForm .formBox .inputbox span {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contactForm .inputbox.w100 span {
+  color: #fff; /* Altera a cor do texto para preto (#000000) */
+  font-size: 15px; /* Define o tamanho da fonte para 1px */
+}
+
+section .container .contactinfo .sci{
+  position: relative;
+  display: flex;
+
+}
+section .container .contactinfo .sci li {
+  list-style: none;
+  margin-right: 15px;
+
+}
+
+section .container .contactinfo .sci li img {
+  width: 40px; /* Altere esse valor para diminuir ou aumentar o tamanho dos ícones */
+}
+
+section .container .contactinfo .sci li a{
+  text-decoration: none;
+
+}
+
+section .container .contactinfo .sci li a img{
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+section .container .contactinfo .sci li:hover a img{
+  opacity: 1;
+}
+
+
+section .container .contactForm{
+  position: absolute;
+  padding: 70px 50px;
+  background:  #4b281f;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  z-index: 1;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0);
+}
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+p.end {
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

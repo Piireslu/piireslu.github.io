@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Importa fontes do Google Fonts -->
+    <link rel="stylesheet" href="./styles/styles-contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h2 class="logo">Conta<span>to</span></h2><!--Logo-->
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="skills.html">habilidades</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="certifications.html">Certificações</a></li>
+            </ul>
+            <a href="contact.htm" class="contact-btn">Contato</a>         
+        </nav>
+        <section>
+            <div class="container">
+                <div class="contactinfo">
+                    <div>
+                        <h2>Informações de contato</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="./svg/icon-perfil.png"></span>
+                                <span>Luciana Pires</span>
+                            </li>
+                            <li>
+                                <span><img src="./svg/envelope.png"></span>
+                                <span>contatolupires@gmail.com</span>
+                            </li>
+
+                        </ul>
+                        <ul class="sci">
+                            <li><a href="https://github.com/piireslu" target="_blank"><img src="./svg/logo-github.svg"></a></li>
+                            <li><a href="https://www.linkedin.com/in/-lucianapires" target="_blank"><img src="./svg/logo-linkedin.svg"></a></li>
+                            <li><a href="mailto:contatolupires@gmail.com" target="_blank"><img src="./svg/logo-mail.svg"></a></li>
+                        </ul>
+                        <a href="./image/curriculo/Currículo Luciana Pires Gomes.pdf Luciana Pires Gomes.pdf" download class="download-btn">Baixar Currículo</a>
+                    </div>
+                </div>
+    
+                <div class="contactForm">
+                    <h2>Me envie uma mensagem</h2>
+                    <form action="contato-admin.php" method="post">
+                        <div class="formBox">
+                            <div class="inputbox w50">
+                                <input type="text" name="primeiroNome" required>
+                                <span>Primeiro nome</span>
+                            </div>
+                            <div class="inputbox w50">
+                                <input type="text" name="sobrenome" required>
+                                <span>Sobrenome</span>
+                            </div>
+                        </div>
+                        <form action="contato-admin.php" method="post">
+                        <!-- Outros campos do formulário aqui -->
+                        <div class="inputbox w100">
+                            <textarea name="mensagem" required></textarea>
+                            <span>Deixe sua mensagem inspiradora aqui!</span>
+                        </div>
+                        <div class="inputbox w100">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                    </div>
+                </div>            
+                
+            </div>
+
+        </section>
+        </body>
+        </html>
+    </section>
