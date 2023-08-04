@@ -582,13 +582,13 @@ about .about-content {
     margin-top: 44px;
   }
   .main .typing-effect {
-    margin-top: 250px;
+    margin-top: 300px;
     font-size: 75px;
     transform: scale(1);
   }
   
   .main .typing-effect span {
-    font-size: 5px; /* Ajuste o tamanho da fonte para diminuir */
+    font-size: 75px; /* Ajuste o tamanho da fonte para diminuir */
   }
 
   .profile-photo {
