@@ -514,7 +514,7 @@ about .about-content {
     background-image: none;
     align-items: center; /* Alinha os elementos verticalmente no centro */
     background-color: transparent;
-    width: 100vw; /* Ajuste a largura conforme necessário */
+    width: 100%; /* Ajuste a largura conforme necessário */
     height: 100px; 
     padding: 10px; /* Adicione espaço interno para melhor visualização */
 
@@ -575,11 +575,15 @@ about .about-content {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
     position: absolute;
     top: 0%; /* Centraliza verticalmente */
-    left:70%; /* Centraliza horizontalmente */
+    left:80%; /* Centraliza horizontalmente */
     width: 16vw;
     vertical-align: top; /* Posiciona o logo mais para cima */
   
     margin-top: 44px;
+  }
+
+  .main{
+    box-sizing: border-box;
   }
   .main .typing-effect {
     margin-top: 300px;
@@ -589,6 +593,7 @@ about .about-content {
   
   .main .typing-effect span {
     font-size: 75px; /* Ajuste o tamanho da fonte para aumentar */
+
   }
 
   .profile-photo {
