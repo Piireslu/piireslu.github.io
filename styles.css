@@ -1,303 +1,253 @@
-/* Importando fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Montserrat:wght@100;500;800 & family= Poppins:wght@400;500;700; 800 & display=swap');
 
-
-@import url("./styles/styles-about.css");
-@import url("./styles/styles-certifications.css");
-@import url("./styles/styles-projects.css");
-@import url("./styles/styles-skills.css");
-
-
-/* Resete de estilos para elementos */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
-}
- 
-/* Definindo variáveis de cores no root do documento */
-:root {
-    --color-white: #fff;
-    --color-brown: #231710;
-    --color-brown01: #966d68;
-    --color-brown02: #8f665e;
-    --color-brown03: #493736;
-    --color-gray: #ddd3ca;
-    --color-beige: #aa9280;
-    --color-black: #000000;
-    
-}
 /* Configurações gerais para o documento */  
 html {
-    scroll-behavior: smooth;
-    font-size: 10px;
+  scroll-behavior: smooth;
+  font-size: 10px;
 }
 /* Configuração da fonte padrão para o corpo do documento */  
 body {
-    font-family: 'poppins', sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 /* Estilização da seção 'person' */  
 /* Estilização da barra de navegação */
 .navbar {
-  background-image: url(./image/backgound-3.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
+background-image: url(./image/backgound-3.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100%;
 }
-
-
 nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 45px;
-  padding-left: 8%;
-  padding-right: 8%;
-
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 45px;
+padding-left: 8%;
+padding-right: 8%;
 }
-
 .logo{
-  color: #4b281f;;
-  font-size: 35px;
-  cursor: pointer;
-  letter-spacing: 1px;
+color: #4b281f;;
+font-size: 35px;
+cursor: pointer;
+letter-spacing: 1px;
 }
-
-
 span{
-  color: #9b746a;
+color: #9b746a;
 }
-
 nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px  25px;
-  font-size: 20px;
+list-style-type: none;
+display: inline-block;
+padding: 10px  25px;
+font-size: 20px;
 }
-
 nav ul li a{
-  color: #8f665e;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
+color: #8f665e;
+text-decoration: none;
+font-weight: bold;
+text-transform: capitalize;
 }
-
 nav ul li a:hover{
-  color: #231710;
-  transform: .4s;
+color: #231710;
+transform: .4s;
 }
 .contact-btn {
-  background-color: #4b281f;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
-  transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
+background-color: #4b281f;
+color: #fff;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 10px 25px;
+border-radius: 30px;
+transition: transform 0.3s ease; /* Apenas 'transition', sem repetir a palavra */
 }
-
 .contact-btn:hover {
-  transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
+transform: scale(1.05); /* Aumentar o valor para uma expansão maior, ou diminuir para menos expansão */
 }
 .main{
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
+position: absolute;
+top: 50%;
+left: 8%;
+transform: translateY(-50%);
 }
-
 .main span{
-  color: #9b746a;
+color: #9b746a;
 }
-
 h1{
-  color: #231710;
-  margin: 20px 0px 20px;
-  font-size: 75px;
-  transform: scale(1);
+color: #231710;
+margin: 20px 0px 20px;
+font-size: 75px;
+transform: scale(1);
 }
-
 h3 {
-  color: #231710;
-  font-size: 25px; /* Altere o valor para o tamanho desejado */
-  margin-bottom: 40px;
+color: #231710;
+font-size: 25px; /* Altere o valor para o tamanho desejado */
+margin-bottom: 40px;
 }
-
-
 #form h3 span {
-  display: inline;
-  
-}
+display: inline;
 
+}
 /* Estilização da seção de stacks na seção 'person' */  
 .stack-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 6rem;
-  float: left;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  filter: brightness(0.8);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top: 6rem;
+float: left;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.5s ease, transform 0.5s ease;
+filter: brightness(0.8);
 }
 /* Estilização do conteúdo de stacks na seção 'person' */  
-
 .stack-content .stacks-content {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 1s; /* Adjust the delay as needed */
+opacity: 0;
+transform: translateY(20px);
+animation: fadeIn 1s ease forwards;
+animation-delay: 1s; /* Adjust the delay as needed */
 }
 /* Estilização da lista de stacks */  
 .stack-content h3 {
-  color: var(--color-brown);
-  font-size: 1.15rem;
-  margin-left: 20px;
+color: var(--color-brown);
+font-size: 1.15rem;
+margin-left: 20px;
 }
 /* Estilização dos itens da lista de stacks */  
 .stacks {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+display: flex;
+align-items: center;
+flex-direction: row;
 }
 /* Estilização das imagens nos itens da lista de stacks */  
 .stacks ul li {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 10px;
-  padding: 10px;
-  list-style: none;
+display: flex;
+align-items: center;
+position: relative;
+margin: 10px;
+padding: 10px;
+list-style: none;
 }
 /* Estilização das imagens nos itens da lista de stacks */
 .stacks ul li img {
-  width: 30px;
-  height: auto;
-  transition: transform .3s ease;
+width: 30px;
+height: auto;
+transition: transform .3s ease;
 }
 /* Estilização do efeito de hover nas imagens dos itens da lista de stacks */
 .stacks ul li div img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+transform: scale(1.2);
+cursor: pointer;
 }
 /* Estilização do efeito de hover nas divs dos itens da lista de stacks */
 .stacks ul li div:hover::after {
-  content: attr(data);
-  position: absolute;
-  top: 50px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  color: var(--color-black);
+content: attr(data);
+position: absolute;
+top: 50px;
+left: 10px;
+width: 20px;
+height: 20px;
+color: var(--color-black);
 }
 .stacks-content.fadeIn {
-  opacity: 0;
-  animation: fadeIn .5s ease forwards;
-  animation-delay: 2s;
+opacity: 0;
+animation: fadeIn .5s ease forwards;
+animation-delay: 2s;
 }
-
 #person {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to left, var(--color-brown) 0%, var(--color-brown02) 100%);
-  
-}
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+background: linear-gradient(to left, var(--color-brown) 0%, var(--color-brown02) 100%);
 
+}
 /* Estilização do conteúdo da seção 'person' */  
 .person-content {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'poppins';
-    background: #ddd3ca;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'poppins';
+  background: #ddd3ca;
 }
 /* Configuração da animação para a escrita das palavras */  
 .person-content div h1,
 .person-content div h2,
 .person-content div h3 {
-    color: transparent;
-    padding: 0px 4px;
-    line-height: 6rem;
-    animation: written_tex .5s ease forwards;
+  color: transparent;
+  padding: 0px 4px;
+  line-height: 6rem;
+  animation: written_tex .5s ease forwards;
 }
 /* Configuração específica para o h1 da seção 'person-content' */  
 .person-content div h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 /* Configuração específica para o h2 da seção 'person-content' */  
 .person-content div h2 {
-    font-size: 5.5rem;
+  font-size: 5.5rem;
 }
 /* Configuração específica para o h3 da seção 'person-content' */  
 .person-content div h3 {
-    font-size: 1.8em;
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(40) forwards;
-    animation-delay: 3s;
+  font-size: 1.8em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(40) forwards;
+  animation-delay: 3s;
 }
- /* Configuração para adicionar delay na animação do primeiro h1 */ 
+/* Configuração para adicionar delay na animação do primeiro h1 */ 
 .person-content div h1:nth-child(1) {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 /* Configuração para adicionar delay na animação do segundo h2 */  
 .person-content div h2:nth-child(2) {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 /* Configuração para adicionar delay na animação do terceiro h3 */  
 .person-content div h3:nth-child(3) {
-    animation: written_tex_name .5s ease forwards;
-    animation-delay: 3s;
+  animation: written_tex_name .5s ease forwards;
+  animation-delay: 3s;
 }
 /* Estilização dos h1 dentro de .person-content div com pseudoelemento span */  
 .person-content div h1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
 }
 /* Estilização da seção de background da seção 'person' */  
 .person-background {
-  position: absolute;
-  top: 0;
-  right: 0; /* Posiciona à direita da página */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 100vh;
-  background-size: auto;
-  background-position: right center;
-  background-repeat: no-repeat;
-  animation: fadeIn 0.5s ease forwards;
-  animation-delay: 2s;
+position: absolute;
+top: 0;
+right: 0; /* Posiciona à direita da página */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 50%;
+height: 100vh;
+background-size: auto;
+background-position: right center;
+background-repeat: no-repeat;
+animation: fadeIn 0.5s ease forwards;
+animation-delay: 2s;
 }
 /* Estilização da seção de nome na seção 'person' */  
 .person-name {
-    margin-top: 11rem;
+  margin-top: 11rem;
 }
-
 /* Estilização da seção da foto de perfil */  
 .profile-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 /* Estilização da seção da foto de perfil */  
-
 .profile-photo {
 position: absolute;
 top: 200px; /* Ajuste a posição vertical conforme necessário */
@@ -312,159 +262,294 @@ animation-delay: 2s;
 border: 3px solid var(--color-brown);
 }
 /* Estilização da animação fadeIn para stacks-content */  
-
 /* Estilização da animação fadeIn para profile-photo */  
 .profile-photo.fadeIn {
-    opacity: 0;
-    animation: fadeIn .5s ease forwards;
-    animation-delay: 2s;
+  opacity: 0;
+  animation: fadeIn .5s ease forwards;
+  animation-delay: 2s;
 }
 /* Estilização da animação fadeIn para links */ 
 .links {
-    opacity: 0;
-    animation: fadeIn .5s ease forwards;
-    animation-delay: 2s;
+  opacity: 0;
+  animation: fadeIn .5s ease forwards;
+  animation-delay: 2s;
 }
 /* Estilização dos links de mídia social */  
 .links a img {
-    width: 35px;
-    height: 35px;
-    margin: 8px;
-    transition: transform .3s ease;
-    transform: scale(1);
-    cursor: pointer;
-    filter: brightness(0.8);
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  transition: transform .3s ease;
+  transform: scale(1);
+  cursor: pointer;
+  filter: brightness(0.8);
 }
 /* Estilização do efeito de hover nos links de mídia social */ 
 .links a img:hover {
-    filter: brightness(1);
+  filter: brightness(1);
 }
 /* Estilização do efeito de hover nas imagens dos links de mídia social */  
 .links img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-
-
 /* Estilização da seção 'about - Sobre Mim' */  
 .about {
-  display: flex;
+display: flex;
 }
-
 /* Estilização do background da seção 'sobre mim' com image de fundo  */  
 .background-about {
-  background-size: cover;
-  background-position: center;
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background-image: url(./image/backgound-3.jpg);
+background-size: cover;
+background-position: center;
+align-items: center;
+display: flex;
+height: 100vh;
+width: 100%;
+background-image: url(./image/backgound-3.jpg);
 }
-
-
 .about .background-about {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Alinhe o conteúdo ao lado direito */
-  align-items: flex-start; /* Alinhe o conteúdo ao topo */
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: flex-end; /* Alinhe o conteúdo ao lado direito */
+align-items: flex-start; /* Alinhe o conteúdo ao topo */
 }
-
 /* Estilização do wrapper da imagem na seção 'about' */  
 .img-wrapper {
-  width: 40%;
-  display: flex;
-  align-items: center;
+width: 40%;
+display: flex;
+align-items: center;
 }
 /* Estilização da imagem na seção 'about' */  
 .img-wrapper img {
-  height: 50%;
-  width: 500%;
+height: 50%;
+width: 500%;
 }
 /* Estilização do título da seção 'about' */
-
 #about .background-about::before h2 {
+font-size: 1.8rem;
+margin-bottom: 10px;
+}
+#about .background-about::after h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
-
-#about .background-about::after h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-   
+ 
 about .about-content {
-    flex: 1;
-    padding: 30px;
-    display: flex;
-    align-items: center;
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  align-items: center;
 }
 /* Estilização do wrapper da imagem na seção 'about' */  
 .about .img-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
 }
-
-
-
 /* Estilização do conteúdo da seção 'about' com posição relativa */  
 .about-content {
-  width: 80%;
-  max-width: 400px;
-  padding: 20px;
-  font-size: 1.6rem;
-  border-radius: 10px;
-  position: relative;
-  color: var(--color-white);
-  opacity: 0;
-  animation: fadeIn .5s ease-in-out forwards;
-  animation-delay: 2s;
+width: 80%;
+max-width: 400px;
+padding: 20px;
+font-size: 1.6rem;
+border-radius: 10px;
+position: relative;
+color: var(--color-white);
+opacity: 0;
+animation: fadeIn .5s ease-in-out forwards;
+animation-delay: 2s;
 }
 .about-content h1 {
-  white-space: nowrap;
-  font-size: 1.6rem;
+white-space: nowrap;
+font-size: 1.6rem;
 }
 /* Estilização do before para criar borda externa na seção 'about' */  
 .about-content::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  background-color: var(--color);
-  border-radius: 20px;
-  z-index: -1;
+content: "";
+position: absolute;
+top: -20px;
+left: -20px;
+width: calc(100% + 40px);
+height: calc(100% + 40px);
+background-color: var(--color);
+border-radius: 20px;
+z-index: -1;
 }
 /* Estilização do after para criar borda interna na seção 'about' */  
 .about-content::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  border-radius: 10px;
-  z-index: -1;
+content: "";
+position: absolute;
+top: -10px;
+left: -10px;
+width: calc(100% + 20px);
+height: calc(100% + 20px);
+border-radius: 10px;
+z-index: -1;
 }
-  
+
 /* Estilização da classe .body */
 .body {
-    background: #aa9280;
-    transition: all .5s;
-    padding: 1px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #aa9280;
+  transition: all .5s;
+  padding: 1px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Estilização da classe .veen */
+.footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #f1f1f1;
+color: #000000;
+font-size: 14px;
+padding: 10px;
+text-align: center;
+}
+/* Configuração da animação fadeIn para elementos */  
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+/* Configuração da animação para escrita de texto */  
+@keyframes written_tex {
+0% {
+  color: transparent;
+}
+100% {
+  color: var(--color-brown);
+}
+}
+/* Configuração da animação para escrita de nome */
+@keyframes written_tex_name {
+  100% {
+    color: var(--color-brown);
+  }
+}
 
+@keyframes typing {
+  0% {
+    width: 0;
+    color: transparent;
+  }
+  100% {
+    width: 100%;
+    color: var(--color-black);
+  }
+}
+/* Responsividade para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos horizontalmente */
+  background-image: none;
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+  background-color: transparent;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 100px; 
+  padding: 10px; /* Adicione espaço interno para melhor visualização */
+}
+.logo{
+  display: flex;
+  font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
+  width: 0vw;
+  vertical-align: top; /* Posiciona o logo mais para cima */
+  margin-top: 10px;
+}
+body {
+  background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
+}
+nav li a{
+  font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
+  display: inline;
+  width: 0vw;
+  margin-top: 80px;
+}
+nav ul {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+    display: flex; /* Faz com que a lista de navegação seja flexível */
+    list-style: none;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    width: 17vw;
+}
+  nav ul li:not(:last-child) {
+  margin-right: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #231710;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
+}
+.contact-btn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 13px; 
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  position: absolute;
+  top: 0%; /* Centraliza verticalmente */
+  left:80%; /* Centraliza horizontalmente */
+  width: 16vw;
+  vertical-align: top; /* Posiciona o logo mais para cima */
+
+  margin-top: 44px;
+}
+.main{
+  box-sizing: border-box;
+}
+.profile-photo {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn .5s ease-in-out forwards;
+  animation-delay: 2s;
+  border: 3px solid var(--color-brown);
+}
+.main .typing-effect {
+  margin-top: 350px;
+  font-size: 50px;
+  transform: scale(1);
+}
+
+.main .typing-effect span {
+  font-size: 50px; /* Ajuste o tamanho da fonte para aumentar */
+}
+
+h3{
+  font-size: 25px;
+}
+
+.stacks-content.fadeIn .stacks {
+  display: none;
+
+}
 
 .footer {
   position: fixed;
@@ -473,167 +558,8 @@ about .about-content {
   width: 100%;
   background-color: #f1f1f1;
   color: #000000;
-  font-size: 14px;
+  font-size: 10px;
   padding: 10px;
   text-align: center;
 }
-
-
-/* Configuração da animação fadeIn para elementos */  
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
-/* Configuração da animação para escrita de texto */  
-@keyframes written_tex {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: var(--color-brown);
-  }
-}
-/* Configuração da animação para escrita de nome */
-@keyframes written_tex_name {
-    100% {
-      color: var(--color-brown);
-    }
-}
-  
-@keyframes typing {
-    0% {
-      width: 0;
-      color: transparent;
-    }
-    100% {
-      width: 100%;
-      color: var(--color-black);
-    }
-  }
-/* Responsividade para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    .navbar {
-    display: flex;
-    justify-content: space-between; /* Alinha os elementos horizontalmente */
-    background-image: none;
-    align-items: center; /* Alinha os elementos verticalmente no centro */
-    background-color: transparent;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 100px; 
-    padding: 10px; /* Adicione espaço interno para melhor visualização */
-
-  }
-  .logo{
-    display: flex;
-    font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
-    width: 0vw;
-    vertical-align: top; /* Posiciona o logo mais para cima */
-    margin-top: 10px;
-  }
-  body {
-    background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
-  }
-
-  nav li a{
-    font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
-    display: inline;
-    width: 0vw;
-    margin-top: 80px;
-
-  }
-  nav ul {
-    display: flex;
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    list-style: none;
-    padding: 0;
-
-  }
-
-  nav ul li {
-
-      display: flex; /* Faz com que a lista de navegação seja flexível */
-      list-style: none;
-      align-items: center; 
-      margin: 0;
-      padding: 0;
-      width: 17vw;
-  }
-    nav ul li:not(:last-child) {
-    margin-right: 5px;
-  }
-
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #231710;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
-  }
-
-  .contact-btn {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    font-size: 13px; 
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    position: absolute;
-    top: 0%; /* Centraliza verticalmente */
-    left:80%; /* Centraliza horizontalmente */
-    width: 16vw;
-    vertical-align: top; /* Posiciona o logo mais para cima */
-  
-    margin-top: 44px;
-  }
-
-  .main{
-    box-sizing: border-box;
-  }
-  .main .typing-effect {
-    margin-top: 300px;
-    font-size: 75px;
-    transform: scale(1);
-  }
-  
-  .main .typing-effect span {
-    font-size: 75px; /* Ajuste o tamanho da fonte para aumentar */
-
-  }
-
-  .profile-photo {
-    position: absolute;
-    top: 160px;
-    right: 100px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    opacity: 0;
-    animation: fadeIn .5s ease-in-out forwards;
-    animation-delay: 2s;
-    border: 3px solid var(--color-brown);
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    color: #000000;
-    font-size: 6px;
-    padding: 10px;
-    text-align: center;
-  }
-}
-  
-
-
-
-

@@ -318,18 +318,15 @@ section .container .contactForm{
 
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 14px;
   padding: 10px;
   text-align: center;
-}
-
-p.end {
-  font-size: 14px;
-  color: #666;
 }
 
 @keyframes fadeIn {
