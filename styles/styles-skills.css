@@ -304,19 +304,30 @@ button:hover{
 /* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
   .navbar {
-
+  display: block;
+  align-items: center; /* Alinha os elementos verticalmente no centro */
   justify-content:space-around; /* Alinha os elementos horizontalmente */
   background-image: none;
-
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
 }
+
+
 .logo{
   display: flex;
   font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
   width: 0vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
-  width: 0vw;
   margin-top: 0px;
+  height: 100px;
+  top: -10px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
 }
+
 body {
   background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
 }
@@ -326,14 +337,18 @@ nav li a{
   display: inline;
   width: 0vw;
   margin-top: 80px;
+
 }
 nav ul {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente no centro */
   list-style: none;
   padding: 0;
+
 }
+
 nav ul li {
+
     display: flex; /* Faz com que a lista de navegação seja flexível */
     list-style: none;
     align-items: center; 
@@ -345,6 +360,7 @@ nav ul li {
   margin-right: 5px;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: #231710;
@@ -352,6 +368,7 @@ nav ul li a {
   text-transform: capitalize;
   font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
+
 .contact-btn {
   display: flex;
   margin: 0;
@@ -363,7 +380,6 @@ nav ul li a {
   left:80%; /* Centraliza horizontalmente */
   width: 16vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
-
   margin-top: 44px;
 }
 
@@ -371,11 +387,11 @@ nav ul li a {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
   margin: 30px 30px; /* Margem vertical de 30px e margem esquerda de 10px */
   font-size: 15px;
+  margin-top: 10px;
 }
 
 /* Estilo para o elemento "Caixa" */
 .Caixa {
-
   display: block; /* Altera para "block" para que os Cards sejam empilhados verticalmente */
   flex-wrap: wrap; /* Faz com que os "Card" se ajustem ao tamanho da tela em dispositivos móveis */
   justify-content: center; /* Centraliza os "Card" horizontalmente */
@@ -383,14 +399,12 @@ nav ul li a {
 
 /* Estilo para o elemento "Card" */
 .Card {
-  
-  max-width: 600px; /* Definindo a largura máxima do card */
+  max-width: 400px; /* Reduzindo a largura máxima do card para 400px */
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
-  padding: 10px;
+  padding: 8px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 15px 30px;
-  border-radius: 10px;
-  background:  #572c2a13;
+  margin: 30px; /* Reduzindo as margens para 10px */
+  border-radius: 5px;
 }
 
 /* Estilo para a imagem dentro do "Card" */
