@@ -32,7 +32,7 @@ body {
 }
 /* Estilização da barra de navegação */
 .navbar {
-  background-image: url(/src/image/backgound-certifications.jpg);
+  background-image: url(/image/backgound-contact.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
