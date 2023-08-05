@@ -385,8 +385,8 @@ nav ul li a {
 
 .title h1 {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
-  margin: 50px 70px; /* Margem vertical de 30px e margem esquerda de 10px */
-  font-size: 15px;
+  margin: 50px 50px; /* Margem vertical de 30px e margem esquerda de 10px */
+  font-size: 25px;
   margin-top: 10px;
 }
 
@@ -403,7 +403,7 @@ nav ul li a {
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
   padding: 8px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 70px; /* Reduzindo as margens para 10px */
+  margin: 95px; /* Reduzindo as margens para 10px */
   border-radius: 5px;
 }
 
