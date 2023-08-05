@@ -304,14 +304,9 @@ button:hover{
 /* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
   .navbar {
-  display: flex;
-  justify-content: space-between; /* Alinha os elementos horizontalmente */
+
+  justify-content:space-around; /* Alinha os elementos horizontalmente */
   background-image: none;
-  align-items: center; /* Alinha os elementos verticalmente no centro */
-  background-color: transparent;
-  width: 100%; /* Ajuste a largura conforme necessário */
-  height: 100px; 
-  padding: 10px; /* Adicione espaço interno para melhor visualização */
 
 }
 .logo{
@@ -324,24 +319,19 @@ button:hover{
 body {
   background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
 }
-
 nav li a{
   font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
   display: inline;
   width: 0vw;
   margin-top: 80px;
-
 }
 nav ul {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente no centro */
   list-style: none;
   padding: 0;
-
 }
-
 nav ul li {
-
     display: flex; /* Faz com que a lista de navegação seja flexível */
     list-style: none;
     align-items: center; 
@@ -353,7 +343,6 @@ nav ul li {
   margin-right: 5px;
 }
 
-
 nav ul li a {
   text-decoration: none;
   color: #231710;
@@ -361,7 +350,6 @@ nav ul li a {
   text-transform: capitalize;
   font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
-
 .contact-btn {
   display: flex;
   margin: 0;
@@ -370,14 +358,58 @@ nav ul li a {
   text-align: center; /* Centraliza o conteúdo horizontalmente */
   position: absolute;
   top: 0%; /* Centraliza verticalmente */
-  left:70%; /* Centraliza horizontalmente */
+  left:80%; /* Centraliza horizontalmente */
   width: 16vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
 
   margin-top: 44px;
 }
-.title{
-  font-size: 20px;
+
+/* Estilo para o elemento "Caixa" */
+.Caixa {
+  display: block; /* Altera para "block" para que os Cards sejam empilhados verticalmente */
+  flex-wrap: wrap; /* Faz com que os "Card" se ajustem ao tamanho da tela em dispositivos móveis */
+  justify-content: center; /* Centraliza os "Card" horizontalmente */
 }
 
+/* Estilo para o elemento "Card" */
+.Card {
+  max-width: 600px; /* Definindo a largura máxima do card */
+  height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+/* Estilo para a imagem dentro do "Card" */
+.Card .image-container {
+  text-align: center; /* Centraliza a imagem horizontalmente */
+  margin-bottom: 10px; /* Adiciona uma margem inferior para separar do texto */
+}
+
+/* Estilo para o título dentro do "Card" */
+.Card h2 {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Adiciona uma margem inferior para separar do parágrafo */
+}
+
+/* Estilo para o parágrafo dentro do "Card" */
+.Card p {
+  font-size: 14px;
+  line-height: 1.5; /* Define o espaçamento entre as linhas */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 6px;
+  padding: 10px;
+  text-align: center;
+}
 }
