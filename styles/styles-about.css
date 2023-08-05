@@ -596,7 +596,6 @@ about .about-content {
   }
   body {
     background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
-    margin-left: -10px;
   }
 
   nav li a{
@@ -647,25 +646,32 @@ about .about-content {
     left:70%; /* Centraliza horizontalmente */
     width: 16vw;
     vertical-align: top; /* Posiciona o logo mais para cima */
-  
     margin-top: 44px;
   }
 
-  .main{
-    box-sizing: border-box;
-  }
-  .main .typing-effect {
-    margin-top: 300px;
-    font-size: 20px;
-    transform: scale(1);
-  }
-  h3{
-    font-size: 11px; 
-  }
+.main{
+  box-sizing: border-box;
+}
+
+.main .typing-effect {
+  margin-top: 30px; /* Ajuste a margem superior conforme necessário */
+  font-size: 20px;
+  transform: scale(1);
+}
+
+h3{
+  font-size: 12px; 
+}
   
-  .main .typing-effect span {
-    font-size: 8px; /* Ajuste o tamanho da fonte para aumentar */
-  }
+.main .typing-effect span {
+  font-size: 8px; /* Ajuste o tamanho da fonte para aumentar */
+}
+
+.main .typing-effect p,
+.sobre-mim .other-content p {
+  font-size: 11px; /* Adjust the value as needed */
+}
+
 .links{
   display: none;
 }
