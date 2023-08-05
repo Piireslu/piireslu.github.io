@@ -643,7 +643,7 @@ about .about-content {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
     position: absolute;
     top: 0%; /* Centraliza verticalmente */
-    left:70%; /* Centraliza horizontalmente */
+    left:80%; /* Centraliza horizontalmente */
     width: 16vw;
     vertical-align: top; /* Posiciona o logo mais para cima */
     margin-top: 44px;
