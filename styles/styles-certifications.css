@@ -381,6 +381,12 @@ nav ul li a {
   margin-top: 44px;
 }
 
+.title h1 {
+  text-align: left; /* Alinha o título à esquerda em telas maiores */
+  margin: 30px 30px; /* Margem vertical de 30px e margem esquerda de 10px */
+  font-size: 15px;
+}
+
 /* Estilo para o elemento "Caixa" */
 .Caixa {
   display: block; /* Altera para "block" para que os Cards sejam empilhados verticalmente */
@@ -394,7 +400,7 @@ nav ul li a {
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
   padding: 10px;
   border: 1px solid #ddd;
-  margin: 15px auto;
+  margin: 15px 30px;
   border-radius: 5px;
 }
 

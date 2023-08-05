@@ -314,11 +314,13 @@ button:hover{
   font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
   width: 0vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
-  margin-top: 10px;
+  width: 0vw;
+  margin-top: 0px;
 }
 body {
   background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
 }
+
 nav li a{
   font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
   display: inline;
@@ -365,8 +367,15 @@ nav ul li a {
   margin-top: 44px;
 }
 
+.title h1 {
+  text-align: left; /* Alinha o título à esquerda em telas maiores */
+  margin: 30px 30px; /* Margem vertical de 30px e margem esquerda de 10px */
+  font-size: 15px;
+}
+
 /* Estilo para o elemento "Caixa" */
 .Caixa {
+
   display: block; /* Altera para "block" para que os Cards sejam empilhados verticalmente */
   flex-wrap: wrap; /* Faz com que os "Card" se ajustem ao tamanho da tela em dispositivos móveis */
   justify-content: center; /* Centraliza os "Card" horizontalmente */
@@ -374,12 +383,14 @@ nav ul li a {
 
 /* Estilo para o elemento "Card" */
 .Card {
+  
   max-width: 600px; /* Definindo a largura máxima do card */
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
   padding: 10px;
   border: 1px solid #ddd;
-  margin: 15px auto;
-  border-radius: 5px;
+  margin: 15px 30px;
+  border-radius: 10px;
+  background:  #572c2a13;
 }
 
 /* Estilo para a imagem dentro do "Card" */
@@ -397,7 +408,7 @@ nav ul li a {
 
 /* Estilo para o parágrafo dentro do "Card" */
 .Card p {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.5; /* Define o espaçamento entre as linhas */
 }
 

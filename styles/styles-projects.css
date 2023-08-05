@@ -405,4 +405,10 @@ nav ul li a {
 
   margin-top: 44px;
 }
+
+.title h1 {
+  text-align: left; /* Alinha o título à esquerda em telas maiores */
+  margin: 30px 30px; /* Margem vertical de 30px e margem esquerda de 10px */
+  font-size: 15px;
+}
 }
