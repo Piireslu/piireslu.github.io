@@ -396,11 +396,11 @@ nav ul li a {
 
 /* Estilo para o elemento "Card" */
 .Card {
-  max-width: 400px; /* Definindo a largura máxima do card */
+  max-width: 400px; /* Reduzindo a largura máxima do card para 400px */
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
-  padding: 10px;
+  padding: 5px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 15px 30px;
+  margin: 5px 95px; /* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
   border-radius: 5px;
 }
 

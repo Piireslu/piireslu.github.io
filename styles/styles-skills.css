@@ -329,8 +329,11 @@ button:hover{
 }
 
 body {
-  background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
-}
+    background-color: #ddd3ca;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+    margin: 0; /* Remova qualquer margem do body */
+    padding: 0; /* Remova qualquer padding do body */
+  }
 
 nav li a{
   font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
@@ -385,7 +388,7 @@ nav ul li a {
 
 .title h1 {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
-  margin: 50px 50px; /* Margem vertical de 30px e margem esquerda de 10px */
+  margin: 50px 40px; /* Margem vertical de 30px e margem esquerda de 10px */
   font-size: 25px;
   margin-top: 10px;
 }
@@ -401,16 +404,15 @@ nav ul li a {
 .Card {
   max-width: 400px; /* Reduzindo a largura máxima do card para 400px */
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
-  padding: 8px; /* Reduzindo o padding para 8px */
+  padding: 5px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 95px; /* Reduzindo as margens para 10px */
+  margin: 5px 95px; /* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
   border-radius: 5px;
 }
-
 /* Estilo para a imagem dentro do "Card" */
 .Card .image-container {
   text-align: center; /* Centraliza a imagem horizontalmente */
-  margin-bottom: 10px; /* Adiciona uma margem inferior para separar do texto */
+  margin-bottom: 5px; /* Adiciona uma margem inferior para separar do texto */
 }
 
 /* Estilo para o título dentro do "Card" */
