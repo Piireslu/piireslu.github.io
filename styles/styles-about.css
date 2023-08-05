@@ -301,8 +301,8 @@ h3 {
 
 .profile-photo {
   position: absolute;
-  top: 350px; /* Ajuste a posição vertical conforme necessário */
-  right: 20px; /* Ajuste a posição horizontal conforme necessário */
+  top: 500px; /* Ajuste a posição vertical conforme necessário */
+  right: 80px; /* Ajuste a posição horizontal conforme necessário */
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -356,7 +356,7 @@ h3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 20px;
+  margin: 40px;
   text-align: right;
 }
 .links h4 {
@@ -596,6 +596,7 @@ about .about-content {
   }
   body {
     background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
+    margin-left: -10px;
   }
 
   nav li a{
@@ -659,7 +660,7 @@ about .about-content {
     transform: scale(1);
   }
   h3{
-    font-size: 8px; 
+    font-size: 11px; 
   }
   
   .main .typing-effect span {
@@ -670,5 +671,17 @@ about .about-content {
 }
   .profile-photo {
     display: none;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #000000;
+    font-size: 6px;
+    padding: 10px;
+    text-align: center;
   }
 }
