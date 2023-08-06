@@ -337,3 +337,198 @@ section .container .contactForm{
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px){
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos horizontalmente */
+    background-image: none;
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+    background-color: transparent;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 100px; 
+    padding: 10px; /* Adicione espaço interno para melhor visualização */
+  }
+  .logo{
+    display: flex;
+    font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
+    width: 0vw;
+    vertical-align: top; /* Posiciona o logo mais para cima */
+    margin-top: 10px;
+  }
+
+body {
+    background-color: #ddd3ca;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+    margin: 0; /* Remova qualquer margem do body */
+    padding: 0; /* Remova qualquer padding do body */
+  }
+
+nav li a{
+  font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
+  display: inline;
+  width: 0vw;
+  margin-top: 80px;
+
+}
+nav ul {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  list-style: none;
+  padding: 0;
+
+}
+
+nav ul li {
+
+    display: flex; /* Faz com que a lista de navegação seja flexível */
+    list-style: none;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    width: 17vw;
+}
+  nav ul li:not(:last-child) {
+  margin-right: 5px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #231710;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
+}
+
+.contact-btn {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 13px; 
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  position: absolute;
+  top: 0%; /* Centraliza verticalmente */
+  left:80%; /* Centraliza horizontalmente */
+  width: 16vw;
+  vertical-align: top; /* Posiciona o logo mais para cima */
+  margin-top: 44px;
+}
+
+section .container {
+  position: fixed;
+  top: 40%; /* Posiciona o elemento no meio verticalmente */
+  left: 10px; /* Define uma distância fixa do lado esquerdo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+  padding: 40px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section {
+  position: fixed;
+  top: 50%; /* Posiciona o elemento no meio verticalmente */
+  left: 30px; /* Define uma distância fixa do lado esquerdo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+  padding: 40px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-section .info li {
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 12px;
+  align-items: flex-start;
+}
+
+.contact-section .info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.contact-section .info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+.contact-section .info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.contact-section .info li span:nth-child(1) img,
+.contact-section .info li span:nth-child(2) {
+  opacity: 1;
+}
+
+
+section .contactForm {
+  position: fixed;
+  top: 160%; /* Posiciona o elemento no meio verticalmente */
+  left: 0px; /* Define uma distância fixa do lado esquerdo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+  padding: 40px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm {
+  position: fixed;
+  top: 50%; /* Posiciona o elemento no meio verticalmente */
+  left: 30px; /* Define uma distância fixa do lado esquerdo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  z-index: 999; /* Garante que fique acima de outros elementos */
+  padding: 40px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contactForm .info li {
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 12px;
+  align-items: flex-start;
+}
+
+.contactForm .info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+
+.contactForm .info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+.contactForm .info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.contactForm .info li span:nth-child(1) img,
+.contactForm  .info li span:nth-child(2) {
+  opacity: 1;
+}
+}
