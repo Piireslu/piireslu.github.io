@@ -320,34 +320,51 @@ button:hover{
 /* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
   .navbar {
-
+  display: block;
+  align-items: center; /* Alinha os elementos verticalmente no centro */
   justify-content:space-around; /* Alinha os elementos horizontalmente */
   background-image: none;
-
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
 }
+
+
 .logo{
   display: flex;
   font-size: 30px; /* Ajuste o tamanho da fonte do logo para telas menores */
   width: 0vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
-  margin-top: 10px;
+  margin-top: 0px;
+  height: 100px;
+  top: -10px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
 }
+
 body {
   background-color: #ddd3ca; /* Aplica a cor de fundo a toda a página */
 }
+
 nav li a{
   font-size: 10px; /* Ajuste o tamanho da fonte do logo para telas menores */
   display: inline;
   width: 0vw;
   margin-top: 80px;
+
 }
 nav ul {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente no centro */
   list-style: none;
   padding: 0;
+
 }
+
 nav ul li {
+
     display: flex; /* Faz com que a lista de navegação seja flexível */
     list-style: none;
     align-items: center; 
@@ -359,13 +376,15 @@ nav ul li {
   margin-right: 5px;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: #231710;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
+  font-size: 9px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
+
 .contact-btn {
   display: flex;
   margin: 0;
@@ -377,14 +396,14 @@ nav ul li a {
   left:80%; /* Centraliza horizontalmente */
   width: 16vw;
   vertical-align: top; /* Posiciona o logo mais para cima */
-
   margin-top: 44px;
 }
 
 .title h1 {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
-  margin: 30px 30px; /* Margem vertical de 30px e margem esquerda de 10px */
-  font-size: 15px;
+  margin: 50px 50px; /* Margem vertical de 30px e margem esquerda de 10px */
+  font-size: 25px;
+  margin-top: 5px;
 }
 
 /* Estilo para o elemento "Caixa" */
@@ -400,14 +419,14 @@ nav ul li a {
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
   padding: 5px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 5px 95px; /* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
-  border-radius: 5px;
+  margin: 20px 20px; /* Margem vertical de 30px e margem esquerda de 10px */
+/* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
+  border-radius: 20px;
 }
-
 /* Estilo para a imagem dentro do "Card" */
 .Card .image-container {
   text-align: center; /* Centraliza a imagem horizontalmente */
-  margin-bottom: 10px; /* Adiciona uma margem inferior para separar do texto */
+  margin-bottom: 5px; /* Adiciona uma margem inferior para separar do texto */
 }
 
 /* Estilo para o título dentro do "Card" */
@@ -419,10 +438,34 @@ nav ul li a {
 
 /* Estilo para o parágrafo dentro do "Card" */
 .Card p {
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.5; /* Define o espaçamento entre as linhas */
+  padding: 25px;
+}
+.Paragrafo-button p {
+  margin: 1rem;
+  font-size: 12px;
+}
+.Paragrafo-button {
+  color: #000000;
+  font-size: 16px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  display: flex; /* Tornando o elemento um flex container */
+  justify-content: flex-end; /* Alinhando os botões à direita no eixo horizontal */
 }
 
+.Paragrafo-button button {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  margin-right: 50px; /* Aumente o valor para mover o botão mais para a direita */
+}
 .footer {
   position: fixed;
   bottom: 0;

@@ -407,7 +407,7 @@ nav ul li a {
   color: #231710;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
+  font-size: 9px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
 
 .contact-btn {
@@ -428,7 +428,7 @@ nav ul li a {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
   margin: 50px 50px; /* Margem vertical de 30px e margem esquerda de 10px */
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* Estilo para o elemento "Caixa" */
@@ -442,46 +442,55 @@ nav ul li a {
 .Card {
   max-width: 400px; /* Reduzindo a largura máxima do card para 400px */
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
-  padding: 8px; /* Reduzindo o padding para 8px */
+  padding: 5px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 50px; /* Reduzindo as margens para 10px */
-  border-radius: 5px;
+  margin: 20px 20px; /* Margem vertical de 30px e margem esquerda de 10px */
+/* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
+  border-radius: 20px;
 }
-
 /* Estilo para a imagem dentro do "Card" */
 .Card .image-container {
   text-align: center; /* Centraliza a imagem horizontalmente */
-  margin-bottom: 10px; /* Adiciona uma margem inferior para separar do texto */
-  
+  margin-bottom: 5px; /* Adiciona uma margem inferior para separar do texto */
 }
 
 /* Estilo para o título dentro do "Card" */
 .Card h2 {
-  font-size: 15px;
+  font-size: 10px;
   font-weight: bold;
-  margin-bottom: 50px;
-  margin-top: -10px; /* Ajuste o valor negativo para fazer o texto subir mais */
+  margin-bottom: 5px; /* Adiciona uma margem inferior para separar do parágrafo */
 }
 
-.Card {
-  max-width: 400px; /* Reduzindo a largura máxima do card para 400px */
-  height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
-  padding: 5px; /* Reduzindo o padding para 8px */
-  border: 1px solid #ddd;
-  margin: 5px 95px; /* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
-  border-radius: 5px;
+/* Estilo para o parágrafo dentro do "Card" */
+.Card p {
+  font-size: 9px;
+  line-height: 1.5; /* Define o espaçamento entre as linhas */
+  padding: 25px;
+}
+.Paragrafo-button p {
+  margin: 1rem;
+  font-size: 12px;
+}
+.Paragrafo-button {
+  color: #000000;
+  font-size: 16px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  display: flex; /* Tornando o elemento um flex container */
+  justify-content: flex-end; /* Alinhando os botões à direita no eixo horizontal */
 }
 
-.show-credential-btn {
-  width: 90px; /* Ajuste a largura do botão */
-  height: 30px; /* Ajuste a altura do botão */
-  font-size: 10px; /* Ajuste o tamanho da fonte do texto do botão */
-  padding: 5px 10px; /* Ajuste o espaçamento interno (padding) do botão */
-  text-align: center; /* Centraliza o texto horizontalmente */
-  display: flex; /* Torna o botão um flex container */
-  align-items: center; /* Centraliza o texto verticalmente */
+.Paragrafo-button button {
+  background-color: #231710;
+  color: #fff;
+  text-transform: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  margin-right: 50px; /* Aumente o valor para mover o botão mais para a direita */
 }
-
 .footer {
   position: fixed;
   bottom: 0;

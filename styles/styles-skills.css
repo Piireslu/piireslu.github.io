@@ -369,7 +369,7 @@ nav ul li a {
   color: #231710;
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
+  font-size: 9px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
 
 .contact-btn {
@@ -388,9 +388,9 @@ nav ul li a {
 
 .title h1 {
   text-align: left; /* Alinha o título à esquerda em telas maiores */
-  margin: 50px 40px; /* Margem vertical de 30px e margem esquerda de 10px */
+  margin: 50px 10px; /* Margem vertical de 30px e margem esquerda de 10px */
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* Estilo para o elemento "Caixa" */
@@ -406,8 +406,9 @@ nav ul li a {
   height: auto; /* A altura será ajustada de acordo com o conteúdo interno */
   padding: 5px; /* Reduzindo o padding para 8px */
   border: 1px solid #ddd;
-  margin: 5px 95px; /* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
-  border-radius: 5px;
+  margin: 20px 20px; /* Margem vertical de 30px e margem esquerda de 10px */
+/* Reduzindo as margens superior e inferior para 5px e a margem lateral para 95px */
+  border-radius: 20px;
 }
 /* Estilo para a imagem dentro do "Card" */
 .Card .image-container {
