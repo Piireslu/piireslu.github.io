@@ -400,31 +400,30 @@ nav ul li a {
   text-transform: capitalize;
   font-size: 8px; /* Ajuste o tamanho da fonte dos itens da navegação para telas menores */
 }
-
-.contact-btn {
+section {
+  position: relative;
   display: flex;
-  margin: 0;
-  padding: 0;
-  font-size: 13px; 
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
-  position: absolute;
-  top: 0%; /* Centraliza verticalmente */
-  left:80%; /* Centraliza horizontalmente */
-  width: 16vw;
-  vertical-align: top; /* Posiciona o logo mais para cima */
-  margin-top: 44px;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
 }
-
 section .container {
   position: fixed;
   top: 40%; /* Posiciona o elemento no meio verticalmente */
-  left: 10px; /* Define uma distância fixa do lado esquerdo */
+  left: 0px; /* Define uma distância fixa do lado esquerdo */
   transform: translateY(-50%); /* Centraliza verticalmente */
   z-index: 999; /* Garante que fique acima de outros elementos */
   padding: 40px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+.container {
+  position: relative;
+  min-width: 900px;
+  min-height: 400px;
+  display: flex;
+  z-index: 900;
+}
 .contact-section {
   position: fixed;
   top: 50%; /* Posiciona o elemento no meio verticalmente */
@@ -435,100 +434,76 @@ section .container {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
-.contact-section h2 {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.contact-section .info li {
+/* Estilos para o quadro contactinfo */
+.contactinfo {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  width: 250px;
+  height: calc(100% - 80px);
+  background: #866259;
+  z-index: 2;
+  padding: 40px;
   display: flex;
-  margin: 20px 0;
-  cursor: pointer;
-  font-size: 12px;
-  align-items: flex-start;
-}
-
-.contact-section .info li span:nth-child(1) {
-  width: 30px;
-  min-width: 30px;
-}
-
-.contact-section .info li span:nth-child(1) img {
-  max-width: 100%;
-  filter: invert(1);
-  opacity: 0.5;
-}
-
-.contact-section .info li span:nth-child(2) {
-  color: #fff;
-  margin-left: 10px;
-  font-weight: 300;
-  opacity: 0.5;
-}
-
-.contact-section .info li span:nth-child(1) img,
-.contact-section .info li span:nth-child(2) {
-  opacity: 1;
-}
-
-
-section .contactForm {
-  position: fixed;
-  top: 160%; /* Posiciona o elemento no meio verticalmente */
-  left: 0px; /* Define uma distância fixa do lado esquerdo */
-  transform: translateY(-50%); /* Centraliza verticalmente */
-  z-index: 999; /* Garante que fique acima de outros elementos */
-  padding: 40px;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para o quadro contactForm */
 .contactForm {
-  position: fixed;
-  top: 50%; /* Posiciona o elemento no meio verticalmente */
-  left: 30px; /* Define uma distância fixa do lado esquerdo */
-  transform: translateY(-50%); /* Centraliza verticalmente */
-  z-index: 999; /* Garante que fique acima de outros elementos */
-  padding: 40px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 350px;
+  height: 300px;
+  background: #866259;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos comuns para os quadros */
+.contactinfo h2,
 .contactForm h2 {
   color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
+.contactinfo .info li,
 .contactForm .info li {
   display: flex;
-  margin: 20px 0;
+  margin: 10px 0;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   align-items: flex-start;
 }
 
-.contactForm .info li span:nth-child(1) {
-  width: 30px;
-  min-width: 30px;
-}
-
+.contactinfo .info li span:nth-child(1) img,
 .contactForm .info li span:nth-child(1) img {
-  max-width: 100%;
+  max-width: 30%;
   filter: invert(1);
   opacity: 0.5;
 }
 
+.contactinfo .info li span:nth-child(2),
 .contactForm .info li span:nth-child(2) {
   color: #fff;
-  margin-left: 10px;
-  font-weight: 300;
+  margin-left: 5px;
+  font-weight: 200;
   opacity: 0.5;
 }
 
+.contactinfo .info li span:nth-child(1) img,
 .contactForm .info li span:nth-child(1) img,
-.contactForm  .info li span:nth-child(2) {
+.contactinfo .info li span:nth-child(2),
+.contactForm .info li span:nth-child(2) {
   opacity: 1;
 }
+
 }
