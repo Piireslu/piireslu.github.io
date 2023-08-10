@@ -108,12 +108,12 @@ nav ul li a:hover{
 
 .Card > h2 {
   color: #000000; /* Cor preta para o texto do h2 dentro da classe .Card */
-  font-size: 20px; /* Tamanho da fonte para o h2 dentro da classe .Card */
+  font-size: 10px; /* Tamanho da fonte para o h2 dentro da classe .Card */
   margin-bottom: 10px; /* Espaçamento inferior para o h2 dentro da classe .Card */
 }
 
 .card-title {
-  font-size: 5px; /* Ajuste o valor conforme o tamanho desejado */
+  font-size: 24px; /* Ajuste o valor conforme o tamanho desejado */
   margin-bottom: 40px; /* Ajuste o espaçamento inferior conforme necessário */
 }
 
@@ -242,7 +242,7 @@ button:hover{
 
 .Card {
   background: #aa9280;
-  height: 340px;
+  height: 360px;
   width: 250px;
   border-radius: 20px;
   margin: 15px;
@@ -303,6 +303,8 @@ button:hover{
 .Paragrafo-button p {
   margin: 1rem;
   font-size: 12px;
+  word-wrap: break-word; /* Adicione esta propriedade para quebrar palavras longas */
+  margin-bottom: 20px;
 }
 
 .footer {

@@ -309,13 +309,17 @@ button:hover{
   text-transform: none;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 8px 15px; /* Ajuste o valor do padding para reduzir o tamanho do botão */
-  border-radius: 20px;
+  padding: 10px 50px;
+  border-radius: 30px;
   transition: .4s;
+
   position: absolute; /* Posiciona o botão de forma absoluta em relação ao card */
-  bottom: 15px; /* Ajuste o valor de "bottom" para posicionar verticalmente */
-  left: 20px; /* Ajuste o valor de "left" para posicionar horizontalmente no lado esquerdo */
+  bottom: 10%; /* Centraliza verticalmente no meio do card e move um pouco para baixo */
+  left: 50%; /* Centraliza horizontalmente no meio do card */
+  transform: translate(-50%, 50%); /* Centraliza o botão precisamente */
 }
+
+
 
 .show-credential-site {
   background-color: #231710;
