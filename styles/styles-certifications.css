@@ -242,8 +242,8 @@ button:hover{
 
 .Card {
   background: #aa92805b;
-  height: 360px;
-  width: 250px;
+  height: 340px;
+  width: 270px;
   border-radius: 20px;
   margin: 15px;
   position: relative;
@@ -251,6 +251,7 @@ button:hover{
   text-align: center;
   transform: scale(1); /* Adicionando a transformação de escala */
 }
+
 .Card:hover {
   transform: scale(1.1); /* Escala aumentada quando o mouse estiver sobre a imagem */
 }
