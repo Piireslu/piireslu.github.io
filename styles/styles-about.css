@@ -123,7 +123,7 @@ h1:hover{
 
 h3 {
   color: #000000;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 
@@ -315,7 +315,6 @@ h3 {
 
 
 
-/* Estilização da animação fadeIn para stacks-content */  
 
 /* Estilização da animação fadeIn para profile-photo */  
 .profile-photo.fadeIn {
@@ -325,7 +324,7 @@ h3 {
 }
 
 .other-content {
-  font-size: 15px;
+  font-size: 25px;
   text-align: left; /* Alinha o texto à esquerda */
   max-width: 800px; /* Define a largura máxima do conteúdo */
   margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
