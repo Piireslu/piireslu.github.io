@@ -453,13 +453,14 @@ section .container {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Estilos para o quadro contactinfo */
 section .container .contactinfo{
   position: absolute;
   top: 50px; /* Ajuste o valor conforme necessário para mover o elemento para baixo */
-  left: 10px;
-  width: 200px;
-  height: 250px;
+  left: 40px;
+  width: 300px;
+  height: 200px;
   background: #866259;
   z-index: 2;
   padding: 40px;
@@ -470,20 +471,23 @@ section .container .contactinfo{
  }
 
 /* Estilos para o quadro contactForm */
+/* Ajuste as margens do contactForm para diminuir o espaçamento entre ele e o formBox */
 section .container .contactForm {
   position: absolute;
   top: 300px; /* Ajuste o valor conforme necessário para mover o elemento para baixo */
-  left: -100px;
+  left: -110px;
   width: 300px;
   height: 500px;
   background: #866259;
   z-index: 1;
-  padding: 50px;
+  padding: 10px; /* Ajuste o padding para diminuir o espaçamento interno */
+  margin-top: -30px; /* Ajuste esta margem para mover o contactForm mais próximo do formBox */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
+
 
 .inputbox w50{
   display: flex;
@@ -500,12 +504,18 @@ section .container .contactinfo h2{
 
 section .container .contactForm h2{
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 300;
-  margin-bottom: -10px;
+  margin-top: 130px;
+  margin-bottom: -60px; /* Ajuste este valor para mover o texto mais próximo do formBox */
 }
+
+section .container .contactForm .inputbox w50{
+  margin-top: -130px;
+}
+
 section .container .formBox{
-  
+  margin-top: -30px;
 }
 
 section .container .contactinfo .info li,
@@ -538,6 +548,10 @@ section .container .contactinfo .info li span:nth-child(2),
 section .container .contactForm .info li span:nth-child(2) {
   opacity: 1;
 }
+section .container .contactForm .formBox.inputbox w50{
+  margin-top: -30px;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
