@@ -475,7 +475,7 @@ section .container .contactForm {
   top: 300px; /* Ajuste o valor conforme necessário para mover o elemento para baixo */
   left: -110px;
   width: 300px;
-  height: 305px;
+  height: 355px;
   background: #866259;
   z-index: 1;
   padding: 30px; /* Ajuste o padding para diminuir o espaçamento interno */
