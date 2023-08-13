@@ -301,10 +301,10 @@ h3 {
 
 .profile-photo {
   position: absolute;
-  top: 400px; /* Ajuste a posição vertical conforme necessário */
+  top: 250px; /* Ajuste a posição vertical conforme necessário */
   right: 80px; /* Ajuste a posição horizontal conforme necessário */
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   opacity: 0;
